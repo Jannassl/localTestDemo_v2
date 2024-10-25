@@ -11,7 +11,8 @@ public class VK1Sld36 {
         System.out.println("Select your preferred language:");
         System.out.println("1. English");
         System.out.println("2. Finnish");
-        System.out.println("3. Additional language (e.g., Arabic, Japanese)");
+        System.out.println("3. Russian");
+        System.out.println("4. Chinese");
         int choice = scanner.nextInt();
         OutputGenerator outputGenerator = new OutputGenerator();
         switch (choice) {
@@ -22,8 +23,10 @@ public class VK1Sld36 {
                 outputGenerator.generateOutput("fi");
                 break;
             case 3:
-                outputGenerator.generateOutput("fa"); // Example: Arabic
+                outputGenerator.generateOutput("ru"); // Example: russian
                 break;
+            case 4:
+                outputGenerator.generateOutput("cn");
             default:
                 System.out.println("Invalid choice. Please select a valid option.");
         }
