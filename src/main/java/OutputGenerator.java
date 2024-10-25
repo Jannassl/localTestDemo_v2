@@ -19,6 +19,12 @@ public class OutputGenerator {
             case "fa":
                 locale = new Locale("fa", "IR"); // Farsi example
                 break;
+            case "ru":
+                locale = new Locale("ru", "RU");
+                break;
+            case "cn":
+                locale = new Locale("cn","CN");
+                break;
             default:
                 System.out.println("Error: Unsupported language code.");
                 return;
